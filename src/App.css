@@ -38,9 +38,14 @@ color: blue;
 opacity: 1;
 transform: scale(1.03);
 }
+
+.timeZone{
+  padding:.5rem 1rem;
+}
 .timeZone select{
   width: 100%;
   padding: .2rem .4rem;
+  margin-top: .5rem;
   background-color: rgb(206, 201, 201);
 }
 #hour{
@@ -55,4 +60,17 @@ transform: scale(1.03);
 .weekTable th{
   background-color: rgb(169, 167, 167);
   padding:0 1rem;
+}
+.result{
+  margin: 1rem;
+}
+.result button{
+  padding: .4rem .6rem;
+  cursor: pointer;
+  border-radius: .3rem;
+  border: 1px solid grey;
+  transition: .2s ease-in-out;
+}
+.result button:hover{
+  background-color: rgb(171, 170, 170);
 }

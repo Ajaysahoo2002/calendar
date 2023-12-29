@@ -124,9 +124,14 @@ function TimeTable() {
                     </table>
 
                 </div>
-                <button onClick={handleSaveTimezoneData}>Save Timezone Data</button>
-                <h2>Json Data</h2>
-                <pre>{JSON.stringify(jsonData, null, 2)}</pre>
+                <div className="result">
+                    <button onClick={handleSaveTimezoneData}>Save Timezone Data</button>
+                    {
+                        jsonData != "" ? (<><h2>Json Data</h2>
+                            <pre>{JSON.stringify(jsonData, null, 2)}</pre></>) :""
+                    }
+                    
+                </div>
             </div>
 
         </div>
